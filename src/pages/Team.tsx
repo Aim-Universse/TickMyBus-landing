@@ -1,19 +1,16 @@
 import { Linkedin, Mail } from 'lucide-react';
-import Img1 from './naruto.webp';
-import Img2 from './hinata.webp'
+
 const Team = () => {
   const team = [
     {
       name: 'Anbarasan Shanmugam',
       role: 'Founder & CEO',
-      image: Img1,
       linkedin: '#',
       email: 'john@tickmybus.com'
     },
     {
       name: 'Keertheeswari Anbarasan',
       role: 'Operations Director',
-      image: Img2,
       linkedin: '#',
       email: 'sarah@tickmybus.com'
     },
@@ -38,14 +35,7 @@ const Team = () => {
               key={index}
               className="bg-white rounded-xl shadow-lg overflow-hidden w-96 transform transition-transform duration-300 hover:scale-105"
             >
-              {/* Image Container */}
-              <div className="h-64 overflow-hidden">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              
 
               {/* Content Container */}
               <div className="p-6">
